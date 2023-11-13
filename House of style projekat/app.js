@@ -64,3 +64,55 @@ const initSlider = () =>{
 }
 
 window.addEventListener("load", initSlider);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const navbar = document.querySelector('.navbar ul');
+
+  // Toggle navigation on hamburger menu click
+  hamburgerMenu.addEventListener('click', function () {
+    hamburgerMenu.classList.toggle('active');
+    navbar.classList.toggle('show');
+  });
+
+  // Close navigation on outside click
+  document.addEventListener('click', function (event) {
+    if (!navbar.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+      closeMenu();
+    }
+  });
+
+  // Close navigation on escape key press
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeMenu();
+    }
+  });
+
+  // Close menu when a menu item is clicked
+  navbar.addEventListener('click', function () {
+    closeMenu();
+  });
+
+  function closeMenu() {
+    hamburgerMenu.classList.remove('active');
+    navbar.classList.remove('show');
+  }
+});
+
+// Toggle navigation on hamburger menu click
+hamburgerMenu.addEventListener('click', function () {
+  hamburgerMenu.classList.toggle('active');
+  navbar.classList.toggle('show');
+});
+
+// Close navigation on hamburger icon click
+hamburgerMenu.addEventListener('click', function (event) {
+  if (event.target === hamburgerMenu) {
+    closeMenu();
+  }
+});
+
+  
+  
