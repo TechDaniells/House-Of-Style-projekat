@@ -11,7 +11,10 @@
   background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(pozadina.jpg);
   background-size: cover;
   background-position: center;
+
 }
+
+
 
 .navbar{
   width: 85%;
@@ -35,6 +38,7 @@
   display: inline-block;
   margin: 0 20px;
   position: relative;
+  font-size: 1.1rem;
 }
 
 .navbar ul li a{
@@ -79,7 +83,7 @@
   font-weight: 200;
   line-height: 25px;
   font-size: 30px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:  sans-serif;
 }
 
 button{
@@ -237,11 +241,65 @@ button:hover{
   right: 25px;
 }
 
+
+
 .image-container{
   margin:30px 0 ;
 }
 
+
+  
+/* MEDIA CODES   */
+
+@media(max-width:481px){
+  .content h1{
+    font-size:4rem ;
+  }
+  .content p{
+    font-size: 1.6rem;
+  }
+  button{
+    width: 180px;
+  }
+  .show a{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:769px){
+  .content h1{
+    font-size: 3.9rem;
+  }
+  .content p{
+    font-size: 1.9rem;
+  }
+  ul.hidden{
+    font-size: 1.1rem;
+  }
+  button{
+    width: 190px;
+  }
+}
+
+@media (max-width:1025px){
+  .content h1{
+    font-size: 4rem;
+  }
+  .content p{
+    font-size: 1.8rem;
+  }
+  ul.hidden{
+    font-size: 1.2rem;
+  }
+  button{
+    width: 200px;
+  }
+}
+
+
 @media( max-width: 1023px){
+  
+
  .slider-wrapper .slide-button{
   display: none!important;
  }
@@ -261,7 +319,6 @@ button:hover{
 }
 
 
-
 .background{
   background-image: url('ticks.png');
 }
@@ -272,6 +329,7 @@ button:hover{
   cursor: pointer;
   margin-top: 15px;
 }
+
 
 .bar {
   width: 30px;
@@ -293,12 +351,8 @@ button:hover{
   transform: rotate(45deg) translate(-15px, -6px);
 }
 
-@media (max-width: 576px ){
-  .content h1{
-    font-size: 3.1rem;
 
-  }
-}
+
 
 
 @media (max-width: 767px) {
@@ -336,6 +390,12 @@ transform: translateY(20%);
 .hidden{
     transform: translateY(-100%);
 }
+
+.show li{
+  height: 90px;
+}
+
+
 .show{
   width: 100%;
   height: 100vh;
@@ -349,6 +409,7 @@ transform: translateY(20%);
   transform: translateY(0%);
   transition: .6s ease-in-out;
   top: 0;
+  backdrop-filter: blur(20px) ;
 }
 
 /* tvoj kod */
@@ -364,3 +425,33 @@ transform: translateY(20%);
   left: 30px;
 }
 }
+
+.pozadina{
+  background-image: url();
+}
+
+            /* ABOUT SECTION */
+
+#about{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.kontent h1{
+  font-size: 3.2rem;
+  color: black;
+  margin-top: 100px;
+}
+
+.kontent p{
+  font-size: 1.2rem;
+  flex-direction: row;
+}
+
+
+
+
