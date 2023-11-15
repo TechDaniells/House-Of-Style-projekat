@@ -45,6 +45,7 @@
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+  font-family: 'Montserrat' , sans-serif;
 }
 
 .navbar ul li::after{
@@ -75,7 +76,7 @@
 .content h1{
   font-size: 5rem;
   margin-top: 80px;
-  font-family:sans-serif;
+  font-family: 'Montserrat' ,sans-serif;
 }
 
 .content p{
@@ -99,6 +100,7 @@ button{
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  font-family: 'Montserrat' , sans-serif;
 }
 
 span{
@@ -243,7 +245,7 @@ button:hover{
 
 
 
-.image-container{
+#image-container{
   margin:30px 0 ;
 }
 
@@ -427,7 +429,7 @@ transform: translateY(20%);
 }
 
 .pozadina{
-  background-image: url();
+  background-image: url('ticks.png');
 }
 
             /* ABOUT SECTION */
@@ -442,15 +444,57 @@ transform: translateY(20%);
 }
 
 .kontent h1{
-  font-size: 3.2rem;
+  font-size: 3.8rem;
   color: black;
-  margin-top: 100px;
+  margin-top: 150px;
+  padding: 15px;
+  border-bottom: 1px solid gray;
+  font-family: 'Montserrat' , sans-serif ;
 }
 
 .kontent p{
   font-size: 1.2rem;
-  flex-direction: row;
+  padding: 15px;
+  width: 50%;
+  /* text-align: center; */
+  margin: auto;
+  line-height: 22px;
+  font-family: 'Montserrat' sans-serif;
+  position: relative;
+  z-index: -1;
+  
+
 }
+
+
+.about-container{
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+
+
+}
+
+
+/* Gallery section */
+
+body{
+  background-image: url('ticks.png');
+  scroll-behavior: smooth;
+  
+}
+
+
+
+
+
+
+
+
 
 
 
